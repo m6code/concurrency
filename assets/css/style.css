@@ -1,0 +1,42 @@
+body {
+    background-color: #E4ECF3;
+}
+
+h3 {
+    color: #415870;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+.mt-5, .my-5 {
+    margin-top: 5rem;
+}
+
+.textbox {
+    width : 90px;
+}
+
+/*Customize Navbar*/
+.navbar-cus {
+    background-color: #3681CF;
+}
+
+/*Customize the card*/
+.demo-card-wide.mdl-card {
+    width: 512px;
+}
+
+.demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../img/welcome_card.jpg') center / cover;
+}
+
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+
+/*</style>*/
