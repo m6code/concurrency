@@ -1,3 +1,8 @@
+// Let's register our serviceworker
+navigator.serviceWorker.register('/assets/js/sw/sw.js', {
+    // The scope cannot be parent to the script url
+    scope: '/assets/js/sw/'
+});
 
 // instantiate EasyHttp
 const httpRequest = new EasyHTTP;
