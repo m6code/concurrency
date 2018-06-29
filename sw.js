@@ -76,3 +76,20 @@ self.addEventListener('fetch', function(event) {
             })
     );
 });
+
+self.addEventListener('activate', function(event) {
+
+    const cacheWhitelist = [CACHE_NAME];
+
+    event.waitUntil(
+        caches.keys().then(function(cacheNames) {
+            return Promise.all(
+                cacheNames.map(function(cacheName) {
+                    if (cacheWhitelist.indexOf(cacheName) === -1) {
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
+        })
+    );
+});
