@@ -1,5 +1,5 @@
 # ConCurrency
-A currency converter app
+A currency converter app - https://m6code.github.io/concurrency
 
 ## To run locally
 ```sh
