@@ -2,7 +2,7 @@
 // this polyfill adds them.
 importScripts('polyfill.js');
 
-const CACHE_NAME = 'concurrency-cache-v2';
+const CACHE_NAME = 'concurrency-cache-v3';
 const urls_to_cache = [
     './',
     './assets/css/material.teal-pink.min.css',
@@ -23,7 +23,7 @@ const urls_to_cache = [
     'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
     'https://fonts.googleapis.com/icon?family=Material+Icons',
     'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
-    'logging.js'
+    //'logging.js'
 ];
 
 self.addEventListener('install', function(event) {
