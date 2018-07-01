@@ -41,7 +41,7 @@ function convertCurrency() {
     // Update UI
     function paint(data) {
         // toCurrencyValue.value = data.query;
-        toCurrencyValue.value = Math.round(data[`${query}`] * fromCurrencyValue);
-        console.log(data[`${query}`]);
+        toCurrencyValue.value = (data[`${query}`] * fromCurrencyValue).toFixed(2);
+        console.log(data[`${query}`].toFixed(2));
     }
 }
