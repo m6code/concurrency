@@ -14,9 +14,18 @@ h3 {
 .mt-5, .my-5 {
     margin-top: 5rem;
 }
+.mlc-5{
+    margin-left: 6rem;
+}
+.mrc-5{
+    margin-right: 7rem;
+}
 
-.textbox {
+.selectbox {
     width : 90px;
+}
+.textbox{
+    width : 138px;
 }
 
 /*Customize Navbar*/
