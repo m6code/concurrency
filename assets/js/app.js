@@ -41,7 +41,7 @@ function convertCurrency() {
     // Update UI
     function paint(data) {
         // toCurrencyValue.value = data.query;
-        toCurrencyValue.value = Math.round(data.USD_NGN * fromCurrencyValue);
-        console.log(toCurrencyValue.value);
+        toCurrencyValue.value = Math.round(data[`${query}`] * fromCurrencyValue);
+        console.log(data[`${query}`]);
     }
 }
